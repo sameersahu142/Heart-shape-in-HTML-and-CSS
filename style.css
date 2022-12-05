@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+.whole-container {
+    height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.heart-shape {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #ff0303cc;
+    transform: rotate(45deg);
+}
+
+.heart-shape:before,
+.heart-shape:after {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    content: '';
+    border-radius: 50%;
+    background-color: #ff0303cc;
+}
+
+.heart-shape:before {
+    bottom: 0px;
+    left: -100px;
+}
+
+.heart-shape:after {
+    top: -100px;
+    right: 0px;
+}
+
+.i,
+.you {
+    font-size: 43px;
+}
